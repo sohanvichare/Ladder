@@ -1,0 +1,63 @@
+<ion-modal-view>
+  <ion-header-bar style="background-color: #c0392b; color:white;">
+    <h1 class="title" style="color:white;">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="card" id="successCard">
+      <div class="item item-text-wrap">
+        Success! Now our algorithms will store your schedule data to make the app tailor its schedules better to your needs.
+      </div>
+    </div>
+    <div class="card" id="logoutCard">
+      <div class="item item-text-wrap center">
+        <button class="button button-stable button-outline">
+          Logout
+        </button>
+
+      </div>
+    </div>
+
+    <div class="card" id="loginCard">
+      <div class="item item-divider">
+        Login
+      </div>
+      <form ng-submit="doLogin()">
+        <div class="list">
+          <label class="item item-input">
+            <input type="text" placeholder="Username" ng-model="loginData.username">
+          </label>
+          <label class="item item-input">
+            <input type="password" placeholder="Password" ng-model="loginData.password">
+          </label>
+          <label class="item">
+            <button class="button button-block button-energized button-outline" type="submit">Log in</button>
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="card" id="createCard">
+      <div class="item item-divider">
+        Create Account
+      </div>
+      <form ng-submit="doCreate()">
+        <div class="list">
+          <label class="item item-input">
+            <input type="text" placeholder="Username" ng-model="loginData.username">
+          </label>
+          <label class="item item-input">
+            <input type="password" placeholder="Password" ng-model="loginData.password">
+          </label>
+          <label class="item item-input">
+            <input type="password" placeholder="Retype password" ng-model="loginData.rpassword">
+          </label>
+          <label class="item">
+            <button class="button button-block button-assertive button-outline" type="submit">Create Account</button>
+          </label>
+        </div>
+      </form>
+    </div>
+  </ion-content>
+</ion-modal-view>

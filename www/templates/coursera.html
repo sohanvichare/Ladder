@@ -1,0 +1,16 @@
+<ion-modal-view>
+  <ion-header-bar style="background-color: #c0392b; color:white;">
+    <h1 class="title" id="headr" style="color:white;"></h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div id="web">
+    </div>
+    <div style="text-align: center; margin-top: 25px;">
+      <input id="phoneNum" placeholder="ex. +1408123-4567..."></input>
+      <button id="textButton" ng-click="text()" class="button button-icon icon ion-android-call">Text a friend for help</button>
+    </div>
+  </ion-content>
+</ion-modal-view>

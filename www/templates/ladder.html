@@ -1,0 +1,29 @@
+
+<ion-view view-title="Ladder">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon ion-ios-paperplane button-energized button-outline" ng-click="doStart()">
+    </button>
+    <label class="item-input-wrapper">
+      <input type="text" id="newHomework" class="bottomInput" placeholder=" Hw time (min)...">
+    </label>
+  </ion-nav-buttons>
+  <ion-content id="fullMid">
+    <section id="cd-timeline" class="cd-container">
+  	</section> <!-- cd-timeline -->
+    <div id="sldBox">
+    </div>
+    <div class="center" id="exitBtn">
+    <button class="button button button-energized bigButton" ng-click="doExit()">Exit</button>
+  </div>
+  </ion-content>
+  <ion-footer-bar align-title="center" class="bar-stable" id="foot">
+    <button class="button icon ion-plus-round button-clear" ng-click="newEvent()"></button>
+      <label class="item-input-wrapper">
+        <input type="text" id="new" class="bottomInput" placeholder=" New homework... e.g. math, science, literature">
+      </label>
+      <label class="item-input-wrapper">
+        <input type="text" id="newGrade" class="bottomInput" placeholder=" Percent grade...">
+      </label>
+      <button class="button icon ion-ios-camera button-clear" ng-click="camera()"></button>
+  </ion-footer-bar>
+</ion-view>
